@@ -2,6 +2,8 @@
 
 *** ALPHA VERSION ***
 
+## VIDEO DEMO :
+
 [![Video](https://img.youtube.com/vi/n8YT5_3DOlw/0.jpg)](https://www.youtube.com/watch?v=n8YT5_3DOlw)
 
 ## Usage
