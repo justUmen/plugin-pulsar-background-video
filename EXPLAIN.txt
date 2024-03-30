@@ -1,0 +1,73 @@
+I have 3 files but i can't use atom.workspace.getActivePane().getElement().querySelector('.item-views'); in default_image(file)
+this works if i put it in video-player.js, how can i fix that ?
+
+
+video-player.js :
+"use babel";
+let { dialog } = require("electron").remote;
+let VideoPlayerBackgroundElement = require("./background-element");
+let videoPlayers = [];
+let backgroundVideo = new VideoPlayerBackgroundElement();
+videoPlayers.push(backgroundVideo.videoPlayer);
+
+
+video-element.js :
+'use babel';
+var fs = require('fs');
+let spawn = require("child_process").spawn;
+const app = require('electron').remote.app;
+class VideoPlayerElement extends HTMLElement {
+  constructor() {
+    super(); // Always call super first in the constructor of an HTML element
+    this.attachShadow({ mode: 'open' });
+  }
+  default_image(file){
+    backgroundImage = atom.workspace.getActivePane().getElement().querySelector('.item-views'); // Adjusted to use querySelector
+    clean_path_image = String(file).replace(/'/g, "\\'");
+    console.log(clean_path_image);
+    backgroundImage.style.background="";
+    backgroundImage.style.backgroundColor="";
+    this.set_image_position();
+    backgroundImage.style.backgroundImage="url('"+clean_path_image+"?"+Math.random()+"')";
+    backgroundImage.style.backgroundRepeat="no-repeat";
+    backgroundImage.style.backgroundSize="cover";
+  }
+
+
+
+background-element.js :
+'use babel';
+let VideoPlayerElement = require('./video-element');
+class VideoPlayerBackgroundElement extends HTMLElement {
+  constructor() {
+    super(); // Always call super first in constructor
+    this.videoPlayer = new VideoPlayerElement();
+  }
+  connectedCallback() {
+    // This method is called when your element is inserted into the DOM
+    const activePane = atom.workspace.getActivePane();
+    const platformLinuxElement = activePane.getElement().querySelector('.item-views');
+    if (platformLinuxElement) {
+      console.log(".item-views element is available");
+      platformLinuxElement.appendChild(this);
+      this.attachShadow({ mode: 'open' }).appendChild(this.videoPlayer);
+    } else {
+      console.log(".item-views element not found, waiting for changes...");
+      const observer = new MutationObserver(() => {
+        const updatedPlatformLinuxElement = activePane.getElement().querySelector('.item-views');
+        if (updatedPlatformLinuxElement) {
+          observer.disconnect(); // Stop observing
+          console.log(".item-views element is now available");
+          updatedPlatformLinuxElement.appendChild(this);
+          if (!this.shadowRoot) {
+            this.attachShadow({ mode: 'open' });
+          }
+          this.shadowRoot.appendChild(this.videoPlayer);
+        }
+      });
+      observer.observe(document.body, { childList: true, subtree: true });
+    }
+  }
+}
+customElements.define('video-player-background', VideoPlayerBackgroundElement);
+export default VideoPlayerBackgroundElement;

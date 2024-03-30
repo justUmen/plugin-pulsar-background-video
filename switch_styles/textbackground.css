@@ -1,0 +1,20 @@
+.scroll-view span:first-child{
+  /* background-color: black !important; */
+  text-shadow:
+    0 0 0 black,
+    0 1px 0 black, 0 2px 0 black, 0 3px 0 black, 0 4px 0 black, 0 5px 0 black, 0 6px 0 black,
+    1px 0 0 black, 2px 0 0 black, 3px 0 0 black, 4px 0 0 black, 5px 0 0 black, 6px 0 0 black,
+    -1px 0 0 black, -2px 0 0 black, -3px 0 0 black, -4px 0 0 black, -5px 0 0 black, -6px 0 0 black,
+    0 -1px 0 black, 0 -2px 0 black, 0 -3px 0 black, 0 -4px 0 black, 0 -5px 0 black, 0 -6px 0 black,
+    1px 1px 0 black, 2px 2px 0 black, 3px 3px 0 black, 4px 4px 0 black, 5px 5px 0 black, 6px 6px 0 black,
+    -1px -1px 0 black, -2px -2px 0 black, -3px -3px 0 black, -4px -4px 0 black, -5px -5px 0 black, -6px -6px 0 black,
+    1px -1px 0 black, 2px -2px 0 black, 3px -3px 0 black, 4px -4px 0 black, 5px -5px 0 black, 6px -6px 0 black,
+    -1px 1px 0 black, -2px 2px 0 black, -3px 3px 0 black, -4px 4px 0 black, -5px 5px 0 black, -6px 6px 0 black !important;
+}
+
+/* QUICK FIX TO SEE SELECTION AND HIGHLIGHT ON TOP AND BOTTOM...
+BECAUSE IT IS BEHIND THE SPAN BACKGROUND-COLOR :( */
+.lines{
+  line-height:1.5;
+  text-indent: 5px;
+}

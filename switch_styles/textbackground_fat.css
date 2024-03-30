@@ -1,0 +1,12 @@
+.scroll-view span:first-child{
+  background-color: black !important;
+  text-shadow: none;
+  line-height:1.5;
+}
+
+/* QUICK FIX TO SEE SELECTION AND HIGHLIGHT ON TOP AND BOTTOM...
+BECAUSE IT IS BEHIND THE SPAN BACKGROUND-COLOR :( */
+.lines{
+  line-height:1.5;
+  text-indent: 5px;
+}

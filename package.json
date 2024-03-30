@@ -1,0 +1,18 @@
+{
+  "name": "background-video-player",
+  "main": "./lib/video-player",
+  "version": "0.27.0",
+  "description": "Background video player.",
+  "keywords": [],
+  "repository": "https://github.com/justUmen/background-video-player",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "bundleDependencies": [],
+  "dependencies": {
+    "@electron/remote": "^2.0.10",
+    "jquery": "^3.2.1",
+    "smalltalk": "^4.0.7"
+  }
+}
