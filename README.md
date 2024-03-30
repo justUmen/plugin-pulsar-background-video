@@ -6,7 +6,14 @@
 
 [![Video](https://img.youtube.com/vi/n8YT5_3DOlw/0.jpg)](https://www.youtube.com/watch?v=n8YT5_3DOlw)
 
-## Usage
+## Installation
+
+    cd ~/.pulsar/packages/
+    git clone https://github.com/justUmen/plugin-pulsar-background-video background-video-player
+    cd background-video-player
+    npm install
+
+Launch Pulsar.
 
 ### Play videos/images in background
 
