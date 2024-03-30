@@ -32,7 +32,7 @@ I don't recommend using it for everything, it might clutter your vision and caus
 
 I personally just use Pulsar as a secondary editor when i have a lot of time to spend on a single file. (In combination with another project HtmlWallpaper - not released yet -)
 
-You can also use as background images than have plain color on the first half the screen (white or black), and have the right half of the image to be an image or whatever.  
+You can also use images than have plain color on the first half the screen (white or black), and have the right half of the image to be an image or whatever.  
 This way, the text is still very readable and if sometimes the code (or text) goes above the image, the text-shadow will still make it readable. But it's all up to you, same goes for the font.  
 
 Example for my ultrawide : 
