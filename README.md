@@ -23,7 +23,8 @@ Move to your pulsar packages folder, clone this repo with the name "background-v
     cd background-video-player
     npm install
 
-Launch Pulsar.
+Launch Pulsar.  
+Change for custom variables in Settings and restart Pulsar.
 
 # XTRA (Not directly related to background-video-player but to Atom in general on my personal configuration)
 
