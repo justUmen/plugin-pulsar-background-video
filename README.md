@@ -12,7 +12,7 @@
 
 Also system-wide, I personally use 4 different electron apps that will use the same images/videos.
 
-⚠️ WARNING: I've just started porting this to Pulsar (from Atom), not everything is working yet. :p
+⚠️ WARNING: I've just started porting this to Pulsar (from Atom), not everything is working yet. 😛
 
 ## Installation
 
@@ -28,13 +28,13 @@ Change for custom variables in Settings and restart Pulsar.
 
 ## Usage
 
-I don't recommend using it for everything, it might clutter your vision and cause your eyes to bleed. :D
+I don't recommend using it for everything, it might clutter your vision and cause your eyes to bleed. 🫣
 
 I personally just use Pulsar as a secondary editor when i have a lot of time to spend on a single file. (In combination with another project HtmlWallpaper - not released yet -)
 
 You can also use as background images than have plain color on the first half the screen (white or black), and have the right half of the image to be an image or whatever.  
 This way, the text is still very readable and if sometimes the code (or text) goes above the image, the text-shadow will still make it readable. But it's all up to you, same goes for the font.  
 
-Example : 
+Example for my ultrawide : 
 
 ![Screenshot](screenshot.png)
