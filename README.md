@@ -12,7 +12,7 @@
 
 Also system-wide, I personally use 4 different electron apps that will use the same images/videos.
 
-⚠️ WARNING: I've just started porting this to Pulsar (from Atom), not everything is working yet. 😛
+⚠️ WARNING: I've just started porting this to Pulsar (from Atom), not everything is working yet. No need to tell me some things aren't working. but basic stuff should. 😛
 
 ## Installation
 
